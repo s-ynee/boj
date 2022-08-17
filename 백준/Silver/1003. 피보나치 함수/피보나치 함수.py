@@ -9,8 +9,8 @@ for i in range(t):
     c = int(input())
     if c >= 2:
         for i in range(c-1):
-            zero.append(one[-1])
-            one.append(zero[-2]+one[-1])
+            zero.append(zero[-2] + zero[-1])
+            one.append(one[-2]+one[-1])
 
 
     print(zero[c], one[c])
